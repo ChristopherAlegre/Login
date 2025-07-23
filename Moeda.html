@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Moeda</title>
+</head>
+<body>
+  <h2>Conversor de Dólar para Real</h2>
+  <input type="number" id="dolar" placeholder="Valor em dólar">
+  <button onclick="converterMoeda()">Converter</button>
+  <p id="resultadoMoeda"></p>
+</body>
+<script>
+  function converterMoeda() {
+    let valor = parseFloat(document.getElementById("dolar").value);
+    let cotacao = 5.20;
+    let resultado = valor * cotacao;
+    document.getElementById("resultadoMoeda").innerText = "Valor em real: R$ " + resultado.toFixed(2);
+  }
+</script>
+</html>

@@ -13,8 +13,9 @@ function fazerLogin() {
       mensagem.textContent = "Login realizado com sucesso!";
       mensagem.className = "sucesso";
 
-      window.location.href = "imc.html"  
-      
+      //window.location.href = "imc.html"  
+      window.location.href = "cadastro.html";
+
     } else {
       mensagem.textContent = "Usuário ou senha inválidos.";
       mensagem.className = "erro";
